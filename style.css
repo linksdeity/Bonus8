@@ -1,0 +1,83 @@
+.spud-title{
+    background-color: rgb(13, 122, 13);
+    color: rgb(117, 67, 26);
+    text-align: center;
+    border: 15px rgb(238, 110, 63);
+    border-style: solid;
+    border-radius: 35%;
+    text-shadow: 7px;
+    
+}
+
+.questions{
+    background-color: rgb(14, 219, 219);
+    margin: 8px;
+    padding: 7px;
+    text-align: left;
+    font-size: 15pt;
+    font-weight: bold;
+    border-style: groove;
+    border-width: 10px;
+    border-color: darkblue;
+}
+
+.background{
+    background-size: cover;
+}
+
+.video{
+    
+    margin: 25px;
+    display: block;
+    align-self: center;
+}
+
+.div-container{
+    float: left;
+    margin-right: 45px;
+}
+
+@-webkit-keyframes move
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 65%;
+    }
+}
+@keyframes move
+{
+    from {
+        left: 0;
+    }
+    to {
+        left: 65%;
+    }
+}
+
+a#rotator {
+    text-decoration: none;
+    padding-right: 20px;
+    left: 65%;
+    position: absolute;
+    -webkit-animation: move 7s;
+    animation: move 7s;
+}
+
+a#rotator img {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    -ms-transition: all 1s ease-in-out; 
+    border-radius:60px;
+    transition-duration: 1s;
+    }
+
+a#rotator img:hover { 
+    -webkit-transform: rotate(360deg); 
+    -moz-transform: rotate(360deg); 
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg); 
+    transform: translate()
+}
